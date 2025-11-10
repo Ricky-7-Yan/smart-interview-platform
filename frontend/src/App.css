@@ -1,0 +1,33 @@
+.App {
+  min-height: 100vh;
+  background: #f5f5f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+.section {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
