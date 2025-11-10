@@ -1,0 +1,284 @@
+.task-detail-page {
+  min-height: 100vh;
+  background: #f5f5f7;
+}
+
+.task-detail-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.task-detail-header {
+  margin-bottom: 24px;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  color: #007aff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  padding: 8px 0;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.task-detail-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin: 0;
+}
+
+.task-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 24px;
+}
+
+.task-main-content {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.task-content-wrapper {
+  position: relative;
+}
+
+.task-description,
+.task-content,
+.task-resources {
+  margin-bottom: 32px;
+}
+
+.task-description h2,
+.task-content h2,
+.task-resources h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.content-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #1d1d1f;
+}
+
+.content-text ::selection {
+  background: #ffd700;
+}
+
+.task-resources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-resources li {
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f5f5f7;
+  border-radius: 8px;
+}
+
+.task-resources a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+.task-resources a:hover {
+  text-decoration: underline;
+}
+
+.task-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar-section {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.add-note-button {
+  width: 100%;
+  padding: 10px;
+  background: #007aff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 16px;
+  transition: background 0.2s;
+}
+
+.add-note-button:hover {
+  background: #0051d5;
+}
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.note-item {
+  padding: 12px;
+  background: #f5f5f7;
+  border-radius: 8px;
+  border-left: 3px solid #007aff;
+}
+
+.note-quote {
+  font-style: italic;
+  color: #86868b;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.note-content {
+  color: #1d1d1f;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.note-time {
+  font-size: 12px;
+  color: #86868b;
+}
+
+.highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.highlight-item {
+  padding: 8px;
+  background: #fff9c4;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #1d1d1f;
+}
+
+.note-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.note-modal {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.note-modal h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.selected-text-preview {
+  padding: 12px;
+  background: #f5f5f7;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #86868b;
+  font-style: italic;
+}
+
+.note-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e5e7;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.note-textarea:focus {
+  border-color: #007aff;
+}
+
+.note-modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.highlight-button,
+.save-note-button,
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.highlight-button {
+  background: #ffd700;
+  color: #1d1d1f;
+}
+
+.highlight-button:hover {
+  background: #ffed4e;
+}
+
+.save-note-button {
+  background: #007aff;
+  color: white;
+}
+
+.save-note-button:hover {
+  background: #0051d5;
+}
+
+.cancel-button {
+  background: #f5f5f7;
+  color: #1d1d1f;
+}
+
+.cancel-button:hover {
+  background: #e5e5e7;
+}
