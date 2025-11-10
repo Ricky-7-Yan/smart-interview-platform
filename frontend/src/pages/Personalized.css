@@ -1,0 +1,173 @@
+.personalized-page {
+  min-height: 100vh;
+  background: #f5f5f7;
+}
+
+.personalized-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.personalized-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.page-subtitle {
+  font-size: 16px;
+  color: #86868b;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007aff;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 122, 255, 0.2);
+}
+
+.upload-button:hover:not(:disabled) {
+  background: #0051d5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.upload-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.personalized-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 24px;
+  height: calc(100vh - 200px);
+}
+
+.personalized-chat {
+  min-height: 0;
+}
+
+.personalized-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.sidebar-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.resume-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resume-info p {
+  font-size: 14px;
+  color: #1d1d1f;
+  line-height: 1.5;
+}
+
+.resume-info strong {
+  color: #86868b;
+  font-weight: 500;
+}
+
+.start-interview-btn {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.interview-progress {
+  margin-top: 16px;
+  padding: 12px;
+  background: #f5f5f7;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1d1d1f;
+}
+
+.sidebar-card p {
+  font-size: 14px;
+  color: #86868b;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* 修复输入框色块问题 */
+.chat-input-wrapper {
+  background: #f5f5f7 !important;
+  border: 1px solid #e5e5e7 !important;
+}
+
+.chat-input-wrapper:focus-within {
+  border-color: #007aff !important;
+  box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.1) !important;
+}
+
+.chat-input {
+  background: transparent !important;
+  color: #1d1d1f !important;
+}
+
+.chat-input::placeholder {
+  color: #86868b !important;
+}
+
+/* 滚动条样式 */
+.personalized-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.personalized-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.personalized-sidebar::-webkit-scrollbar-thumb {
+  background: #d2d2d7;
+  border-radius: 3px;
+}
+
+.personalized-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #86868b;
+}
+
+@media (max-width: 1024px) {
+  .personalized-content {
+    grid-template-columns: 1fr;
+  }
+
+  .personalized-sidebar {
+    max-height: 400px;
+  }
+}

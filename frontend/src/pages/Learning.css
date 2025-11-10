@@ -1,0 +1,164 @@
+.learning-page {
+  min-height: 100vh;
+  background: #f5f5f7;
+}
+
+.learning-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.learning-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.page-subtitle {
+  font-size: 16px;
+  color: #86868b;
+}
+
+.learning-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007aff;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 122, 255, 0.2);
+}
+
+.upload-button:hover:not(:disabled) {
+  background: #0051d5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.upload-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.learning-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 24px;
+  height: calc(100vh - 200px);
+}
+
+.learning-chat {
+  min-height: 0;
+}
+
+.learning-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.sidebar-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-list li {
+  font-size: 14px;
+  color: #1d1d1f;
+  padding: 8px 0;
+  border-bottom: 1px solid #f5f5f7;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-button {
+  width: 100%;
+  padding: 12px;
+  background: #f5f5f7;
+  border: 1px solid #e5e5e7;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #007aff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 8px;
+}
+
+.sidebar-button:hover {
+  background: #007aff;
+  color: white;
+  border-color: #007aff;
+}
+
+.sidebar-button:last-child {
+  margin-bottom: 0;
+}
+
+/* 滚动条样式 */
+.learning-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.learning-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.learning-sidebar::-webkit-scrollbar-thumb {
+  background: #d2d2d7;
+  border-radius: 3px;
+}
+
+.learning-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #86868b;
+}
+
+@media (max-width: 1024px) {
+  .learning-content {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-sidebar {
+    max-height: 400px;
+  }
+}

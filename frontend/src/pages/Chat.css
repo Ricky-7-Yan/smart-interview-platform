@@ -1,0 +1,49 @@
+.chat-page {
+  min-height: 100vh;
+  background: #f5f5f7;
+}
+
+.chat-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+}
+
+.chat-header {
+  margin-bottom: 24px;
+}
+
+.context-tabs {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.context-tab {
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid #e5e5e7;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #86868b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.context-tab:hover {
+  background: #f5f5f7;
+}
+
+.context-tab.active {
+  background: #007aff;
+  color: white;
+  border-color: #007aff;
+}
+
+.chat-wrapper {
+  flex: 1;
+  min-height: 0;
+}

@@ -1,0 +1,472 @@
+.task-detail-page {
+  min-height: 100vh;
+  background: #f5f5f7;
+}
+
+.task-detail-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.task-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  color: #007aff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.task-detail-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin: 0;
+}
+
+.task-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+}
+
+.task-main-content {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.task-content-wrapper {
+  line-height: 1.8;
+}
+
+.task-description h2,
+.task-content h2,
+.task-resources h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.content-text {
+  font-size: 16px;
+  color: #1d1d1f;
+  line-height: 1.8;
+}
+
+/* LeetCode题目样式 */
+.leetcode-problem {
+  margin-top: 32px;
+  padding: 24px;
+  background: #f5f5f7;
+  border-radius: 12px;
+}
+
+.problem-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.problem-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.difficulty-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.difficulty-badge.简单,
+.difficulty-badge.easy {
+  background: #d4edda;
+  color: #155724;
+}
+
+.difficulty-badge.中等,
+.difficulty-badge.medium {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.difficulty-badge.困难,
+.difficulty-badge.hard {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.leetcode-link {
+  margin-left: auto;
+  color: #007aff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.leetcode-link:hover {
+  text-decoration: underline;
+}
+
+.problem-description,
+.problem-examples,
+.problem-constraints {
+  margin-bottom: 24px;
+}
+
+.problem-description h3,
+.problem-examples h3,
+.problem-constraints h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.problem-description p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #1d1d1f;
+}
+
+.example-item {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  border-left: 3px solid #007aff;
+}
+
+.example-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #007aff;
+}
+
+.example-content div {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.problem-constraints ul {
+  list-style: none;
+  padding: 0;
+}
+
+.problem-constraints li {
+  padding: 8px 0;
+  font-size: 14px;
+  color: #86868b;
+}
+
+.code-editor-section {
+  margin-top: 24px;
+}
+
+.code-editor-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.code-editor {
+  background: #1d1d1f;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.code-textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #f5f5f7;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  resize: vertical;
+  outline: none;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.run-button,
+.submit-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.run-button {
+  background: #f5f5f7;
+  color: #1d1d1f;
+}
+
+.run-button:hover {
+  background: #e5e5e7;
+}
+
+.submit-button {
+  background: #007aff;
+  color: white;
+}
+
+.submit-button:hover {
+  background: #0051d5;
+}
+
+.task-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-section {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1d1d1f;
+}
+
+.add-note-button {
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f7;
+  border: 1px dashed #d2d2d7;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #007aff;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.add-note-button:hover {
+  background: #e5e5e7;
+}
+
+.notes-list,
+.highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.note-item {
+  padding: 12px;
+  background: #f5f5f7;
+  border-radius: 8px;
+}
+
+.note-quote {
+  font-size: 12px;
+  color: #86868b;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.note-content {
+  font-size: 14px;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+}
+
+.note-time {
+  font-size: 12px;
+  color: #86868b;
+}
+
+.highlight-item {
+  padding: 8px;
+  background: #fff9e6;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #1d1d1f;
+}
+
+.note-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.note-modal {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+.note-modal h3 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.selected-text-preview {
+  padding: 12px;
+  background: #f5f5f7;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #86868b;
+}
+
+.note-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e5e7;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.note-modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.highlight-button,
+.save-note-button,
+.cancel-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.highlight-button {
+  background: #fff9e6;
+  color: #ff9500;
+}
+
+.save-note-button {
+  background: #007aff;
+  color: white;
+}
+
+.cancel-button {
+  background: #f5f5f7;
+  color: #1d1d1f;
+}
+
+/* 在现有CSS基础上添加以下样式 */
+
+.note-item {
+  padding: 12px;
+  background: #f5f5f7;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.delete-note-btn {
+  background: transparent;
+  border: none;
+  color: #ff3b30;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.delete-note-btn:hover {
+  background: #ffe5e5;
+}
+
+.highlight-item {
+  padding: 8px;
+  background: #fff9e6;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.highlight-text {
+  margin-bottom: 4px;
+}
+
+.highlight-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.highlight-time {
+  font-size: 11px;
+  color: #86868b;
+}
+
+.delete-highlight-btn {
+  background: transparent;
+  border: none;
+  color: #ff3b30;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.delete-highlight-btn:hover {
+  background: #ffe5e5;
+}
+
+.empty-hint {
+  text-align: center;
+  color: #86868b;
+  font-size: 14px;
+  padding: 20px;
+  margin: 0;
+}
