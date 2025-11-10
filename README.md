@@ -1,3 +1,5 @@
+![Uploading IMG_2764.JPG…]()
+
 ## 智面工坊 · Interview Forge
 
 一个以学习-面试-补学闭环为核心的智能面试系统。通过个性化任务树、AI 面试与动态补学机制，帮助候选人精准查漏补缺、稳步升级“面试战力”。
@@ -212,3 +214,4 @@ smart-interview-platform/
 
 - **许可证**：MIT
 - **贡献**：欢迎提交 Issue / PR，或在 `database/` 中补充更丰富的数据脚本
+
